@@ -1,0 +1,16 @@
+on:
+  push:
+  workflow_dispatch:
+  
+jobs:
+  winapp:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install WinnAppDriver
+      run: |      
+        start "c:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe" 
+        sleep 5
+    - name: start automation
+      run: |
+        mvn clean test
