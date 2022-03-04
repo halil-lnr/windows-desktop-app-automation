@@ -13,4 +13,4 @@ jobs:
         sleep 5
     - name: start automation
       run: |
-        mvn clean test
+        mvn -q clean test
