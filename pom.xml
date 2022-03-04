@@ -7,12 +7,17 @@
     <groupId>com.thangamfrm</groupId>
     <artifactId>windows-desktop-app-automation</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+	
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.3.1</version>
+            <version>4.1.1</version>
         </dependency>
 	<dependency>
             <groupId>org.testng</groupId>
@@ -24,7 +29,7 @@
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>5.0.0-BETA6</version>
+            <version>5.0.0-BETA9</version>
         </dependency>
     </dependencies>
 
